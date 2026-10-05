@@ -1,0 +1,18 @@
+# Dependencies
+node_modules/
+
+# Secrets - never commit these
+.env
+.env.*
+!.env.example
+
+# Uploaded photos and videos
+backend/uploads/
+
+# Build output
+dist/
+
+# Logs and OS files
+*.log
+.DS_Store
+Thumbs.db
