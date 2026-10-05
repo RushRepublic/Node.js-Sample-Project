@@ -9,8 +9,6 @@ node_modules/
 # Uploaded photos and videos
 backend/uploads/
 
-# Build output
-dist/
 
 # Logs and OS files
 *.log
