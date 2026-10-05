@@ -61,6 +61,9 @@ app.use(errorHandler);
 app.listen(PORT, async () => {
   console.log(`Server running on http://localhost:${PORT}`);
   console.log(`Uploads folder: ${uploadsDir}`);
+  console.log(`Uploads folder (real path): ${fs.realpathSync(uploadsDir)}`);
+  console.log(`App folder: ${__dirname}`);
+  console.log(`Working directory: ${process.cwd()}`);
 
   // Check the database once at startup so problems show up immediately.
   try {
